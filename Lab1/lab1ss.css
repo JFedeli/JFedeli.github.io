@@ -1,0 +1,57 @@
+h1{
+     background-color:black;
+    color:#7DFDFE;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 15px;
+    border: 5px solid #7DFDFE;
+    margin-top: 50px;
+}
+h1:hover{
+            font-size: 4em;
+            color:#7DFDFE
+         }
+body{
+    background-color: black;
+}
+.links{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    
+}
+.imgFig{
+    display: flex;
+    justify-content: space-evenly;
+}
+.names{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    color:white
+}
+
+.welcome{
+    color:white
+}
+
+.quote{
+    color:white
+}
+
+.disclaimer{
+    color:white
+}
+
+.header{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
