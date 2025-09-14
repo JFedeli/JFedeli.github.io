@@ -1,0 +1,78 @@
+
+/* Background image sits on the BODY so it never covers your header/links */
+body{
+  margin: 0;
+  background-color: black; /* fallback color */
+  background-image: url("img/cloud1.jpg.webp"); /* change to your file */
+  background-size: cover;         /* fill the screen */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed;  optional: feel free to remove if you don't want the parallax feel */
+  font-family: Arial, sans-serif;
+}
+
+body.services {background-image: url("img/cloud1.jpg.webp");}
+body.benefits {background-image: url("img/cloud1.jpg.webp");}
+body.providers {background-image: url("img/cloud1.jpg.webp");}
+
+/* Header bar so text is readable over the background */
+.header{
+  background-color: black;
+  color: #7DFDFE;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  border-bottom: 5px solid #7DFDFE;
+  text-shadow: 2px 2px 4px rgb(117, 82, 245);
+}
+
+/* Simple nav using Flexbox (like your lab) */
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgba(0,0,0,0.8); /* solid/dark so links are readable */
+  border-bottom: 1px solid #7DFDFE;
+}
+.links a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+}
+.links a:hover{
+  border-color: #7DFDFE;
+}
+
+/* Page content */
+.title{ 
+  color: #7DFDFE; 
+  text-align: center; 
+  margin-top: 20px;
+}
+.text{ 
+  color: white; 
+  text-align: center; 
+  max-width: 700px; 
+  margin: 0 auto 16px;
+}
+
+/* Example image per page (meets “different graphic on each page”) */
+.page-image{
+  display: block;
+  margin: 10px auto 20px;
+  border: 3px solid #7DFDFE;
+  border-radius: 10px;
+}
+
+/* Footer-ish text */
+.disclaimer{ 
+  color: white; 
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+/* Keep <hr> visible on dark bg */
+hr{ border: 0; height: 1px; background: #7DFDFE; margin: 16px auto; width: 90%; }
