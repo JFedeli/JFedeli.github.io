@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number - Lab 2</title>
+  <link rel="stylesheet" href="lab2.css">
+</head>
+<body>
+  <h1 class="header">Guess the Number</h1>
+  <hr>
+
+  <h2 class="title">Pick a number from 1 to 99</h2>
+  <p class="text">You have 7 attempts. Make them count.</p>
+
+  <div class="game-box">
+    <label for="guess" class="label">Your guess:</label>
+    <input id="guess" type="number" min="1" max="99">
+    <button id="guessBtn">Guess</button>
+    <button id="resetBtn" class="hidden" type="button">Reset</button>
+    <p id="error" class="error"></p>
+
+    <p class="status"><strong>Last result:</strong> <span id="result">—</span></p>
+    <p class="status"><strong>Attempts:</strong> <span id="attempts">0</span> / <span>7</span></p>
+
+    <h3 class="title">Past Guesses</h3>
+    <ol id="past" class="past"></ol>
+
+    <div class="scoreboard">
+      <p class="text small"><strong>Wins:</strong> <span id="wins">0</span> &nbsp; <strong>Losses:</strong> <span id="losses">0</span></p>
+    </div>
+  </div>
+
+  <hr>
+  <p class="disclaimer">CST 336 Internet Programming 2025 short © Fedeli.</p>
+  <hr>
+
+  <script src="script.js"></script>
+</body>
+</html>
