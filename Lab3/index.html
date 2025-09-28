@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+</head>
+<body>
+    <h1> Computers Quiz </h1>
+
+   <div> 1. What CSS property changes the text color? </div> <br>
+
+   <label>
+        <input type="radio" name="q1" value="Text-color"> Text-color
+    </label>
+
+    <label>
+        <input type="radio" name="q1" value="Font-color"> Font-color
+    </label>
+
+    <label>
+        <input type="radio" name="q1" value="windows"> color
+    </label>
+
+    <div id="feedback1"></div>
+
+    <br><br>
+
+    <div> 2. How many cores does the newest intel i7 have? </div>
+    <br>
+    <label>
+        <input id="textSize" type="number" min="10" max="18" step="2">
+    </label>
+
+    <div id="feedback2"></div>
+
+    <br><br>
+
+    <div> 3. Which one is a valid OS  </div>
+    <br>
+    <label>
+    <select id="q3">
+        <option> templeOS </option>
+        <option> green </option>
+        <option> yellow </option>
+
+    </select>
+    <div id="feedback3"></div>
+        
+    </label>
+
+    <br><br>
+
+    <div> 4. what is the most recent nvidia graphics card? </div> <br>
+    <input type="text" id="q4">
+    <div id="feedback4"></div>
+
+    <br><br>
+
+     <div> 5. Name each object that needs a motherboard </div> <br>
+
+   <label>
+        <input type="checkbox" id="q5a"> Projector
+    </label>
+
+    <label>
+        <input type="checkbox" id="q5b"> Electric-Vacuum
+    </label>
+
+    <label>
+        <input type="checkbox" id="q5c"> fork
+    </label>
+    <div id="feedback5"></div>
+
+    <hr>
+    <button> Submit Quiz </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
