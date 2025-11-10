@@ -1,0 +1,44 @@
+#first{
+    background-color: #712b97;
+}
+
+#second{
+    background-color: #59c07f;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+}
+
+form {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 50%;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#authorInfo img {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}

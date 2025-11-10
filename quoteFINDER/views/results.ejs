@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') %>
+</head>
+<body class="text-center" id="second">
+
+    <h1 class="bg-primary text-white m-4"> Famous quotes </h1>
+
+    <% for (let row of rows) { %>
+    "<%= row.quote %>" <br>
+    <a class="authors" href="#" authorId="<%= row.authorId %>"> 
+        <%= row.firstName %> <%= row.lastName %>
+    </a>
+    <br><br> 
+    <% } %>
+
+    <dialog id="authorModal">
+        <div id="authorInfo">
+        <h2 id="authorName"></h2>
+        <img id="authorImage">
+    </div>
+        <button id="closeModal"> Close </button>
+    </dialog>
+
+    <script src="/js/results.js"></script>
+
+    </script>
+    
+    <br><br><br><hr>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

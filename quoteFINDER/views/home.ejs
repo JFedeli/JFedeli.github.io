@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') %>
+</head>
+<body class ="text-center" id="first">
+
+    <h1 class="bg-primary text-white m-4"> Famous quotes </h1>
+    <form id="searchByKeywordFrom" action="/searchByKeyword" method="GET">
+    <label>Keyword: <input type ="text" name="keyword" id="keyword"></label>
+    <button class="button" class="btn btn-outline-success">Search</button>
+    </form>
+
+    <br><hr><br>
+
+    <form action="/searchByAuthor">
+        Author:
+        <select name="authorId">
+            <% for (row of rows) { %>
+         <option value="<%=row.authorId %>"><%=row.firstName %> <%=row.lastName %></option>
+            <% } %>
+        </select>
+        <button class="button" class="btn btn-outline-success">Search</button>
+    </form>
+
+    
+
+
+    <br><br><br><hr>
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>
